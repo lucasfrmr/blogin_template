@@ -1,0 +1,8 @@
+extends layout
+
+block content
+	h1 #{title}
+	ul.ui.bulleted.list
+		each post, i in posts
+			li.item
+				a(href='/post/'+post._id)= post.title

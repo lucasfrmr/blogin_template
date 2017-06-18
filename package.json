@@ -1,0 +1,18 @@
+{
+  "name": "node_from_scratch",
+  "version": "1.0.0",
+  "description": "Knowledge Base app",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app"
+  },
+  "author": "Lucas Farmer",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "bower": "^1.8.0",
+    "express": "^4.15.3",
+    "mongoose": "^4.10.6",
+    "pug": "^2.0.0-rc.2"
+  }
+}

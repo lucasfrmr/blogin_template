@@ -1,0 +1,18 @@
+doctype html
+html
+	head
+		title #{title}
+		link(rel='stylesheet' href='/bower_components/semantic/dist/semantic.min.css')
+	body
+		.ui.container.center.aligned
+			.ui.menu
+				a.item(href='/') Home
+				a.item(href='/posts/add') Add Posts
+				//- a.item(href='')
+			block content
+			br
+			hr
+			footer
+				p Copywrite &copy; 2017
+		script(src='/bower_components/jquery/dist/jquery.min.js')
+		script(src='/bower_components/semantic/dist/semantic.min.js')
