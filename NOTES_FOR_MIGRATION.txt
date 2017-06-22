@@ -1,0 +1,23 @@
+first create a mongo database 
+  mongo
+  use nodekb
+
+change:
+  /config/database.js
+    line 3 from:
+      database:'mongodb://'+process.env.IP+':27017/nodekb',
+    to:
+      database:'mongodb://localhost:27017/nodekb',
+      
+  /app.js
+    line 11 from:
+      mongoose.connect('mongodb://'+process.env.IP+'/nodekb');
+    to:
+      mongoose.connect('mongodb://localhost/nodekb');
+      
+    //change start server port
+      app.listen('8080',  () => {
+	      console.log('Server started on port 3000...');
+	      
+    
+  

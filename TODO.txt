@@ -1,0 +1,5 @@
+create an admin user that can do anything
+remove author input field from edit post page
+fix when user deletes his own post and hits esc instead of ok on the alert that pops up it crashes the server
+add message to deleted post(mabey instead of the alert)
+Show user name in nav bar

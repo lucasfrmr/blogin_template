@@ -5,16 +5,14 @@ block content
 	br
 	.ui.one.column.center.aligned.grid
 	.column.six.wide.form-holder
-		h2.center.aligned.header.form-head Typo's Kill
+		// h2.center.aligned.header.form-head Typo's Kill
 		form.ui.form(method='POST', action='/posts/add')
 				.field
 					label Title:
 					input(name='title', type="text")
 				.field
-					label Author:			
-					input(name='author', type="text")
-				.field
 					label Body:			
 					textarea(name='body')
+				br
 				.field
 					input.ui.button.large.fluid.green(type="submit" value="submit")
